@@ -21,6 +21,7 @@
 		7C345607286C606300EAB9D1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C345606286C606300EAB9D1 /* Webservice.swift */; };
 		7C34560A286C638600EAB9D1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C345609286C638600EAB9D1 /* Order.swift */; };
 		7C3AE529287A172800264896 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AE528287A172800264896 /* OrderViewModel.swift */; };
+		7C3AE52B287A1C1200264896 /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3AE52A287A1C1200264896 /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7C345606286C606300EAB9D1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		7C345609286C638600EAB9D1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7C3AE528287A172800264896 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		7C3AE52A287A1C1200264896 /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				7C3AE528287A172800264896 /* OrderViewModel.swift */,
+				7C3AE52A287A1C1200264896 /* AddCoffeeOrderViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				7C3455D0286C3F0F00EAB9D1 /* SceneDelegate.swift in Sources */,
 				7C3455D8286C3F0F00EAB9D1 /* MVVM_HotCoffee.xcdatamodeld in Sources */,
 				7C34560A286C638600EAB9D1 /* Order.swift in Sources */,
+				7C3AE52B287A1C1200264896 /* AddCoffeeOrderViewModel.swift in Sources */,
 				7C3AE529287A172800264896 /* OrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

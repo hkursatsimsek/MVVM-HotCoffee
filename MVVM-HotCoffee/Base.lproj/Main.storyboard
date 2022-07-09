@@ -71,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="56" width="434" height="421"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ILE-xW-OJf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoffeeTypeTableViewCell" id="ILE-xW-OJf">
                                         <rect key="frame" x="0.0" y="44.5" width="434" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ILE-xW-OJf" id="hQH-N1-NVM">
@@ -80,17 +80,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DSy-eR-iVV" id="KX7-c8-Gbo"/>
+                                    <outlet property="delegate" destination="DSy-eR-iVV" id="4w6-I8-dKB"/>
+                                </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8px-PI-7EO">
-                                <rect key="frame" x="104" y="526" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E4r-Cr-BDU">
-                                <rect key="frame" x="107" y="615" width="200" height="34"/>
+                                <rect key="frame" x="107" y="649" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="H4B-6z-3kq"/>
                                 </constraints>
@@ -98,7 +94,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhd-zz-ja0">
-                                <rect key="frame" x="107" y="657" width="200" height="34"/>
+                                <rect key="frame" x="107" y="691" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="tfw-o1-OyB"/>
                                 </constraints>
@@ -112,19 +108,20 @@
                             <constraint firstItem="Qhd-zz-ja0" firstAttribute="centerX" secondItem="Y6Z-eg-QhF" secondAttribute="centerX" id="0qS-gy-lwm"/>
                             <constraint firstItem="Qhd-zz-ja0" firstAttribute="top" secondItem="E4r-Cr-BDU" secondAttribute="bottom" constant="8" symbolic="YES" id="7gK-LZ-aNh"/>
                             <constraint firstItem="VV0-1M-BfV" firstAttribute="leading" secondItem="cpZ-r7-7Qb" secondAttribute="leading" id="Fuv-WI-MoC"/>
-                            <constraint firstItem="E4r-Cr-BDU" firstAttribute="top" secondItem="8px-PI-7EO" secondAttribute="bottom" constant="58" id="aYi-Zs-BXh"/>
                             <constraint firstItem="VV0-1M-BfV" firstAttribute="top" secondItem="cpZ-r7-7Qb" secondAttribute="top" id="baS-bq-EDb"/>
-                            <constraint firstItem="8px-PI-7EO" firstAttribute="top" secondItem="VV0-1M-BfV" secondAttribute="bottom" constant="49" id="cqR-Kg-BnI"/>
-                            <constraint firstItem="8px-PI-7EO" firstAttribute="centerX" secondItem="Y6Z-eg-QhF" secondAttribute="centerX" id="eCY-42-xWC"/>
                             <constraint firstItem="VV0-1M-BfV" firstAttribute="height" secondItem="Y6Z-eg-QhF" secondAttribute="height" multiplier="0.5" id="eQt-V8-GNB"/>
                             <constraint firstItem="VV0-1M-BfV" firstAttribute="width" secondItem="Y6Z-eg-QhF" secondAttribute="width" multiplier="1.04831" id="eYN-6Z-x8x"/>
                             <constraint firstItem="E4r-Cr-BDU" firstAttribute="centerX" secondItem="Y6Z-eg-QhF" secondAttribute="centerX" id="mw7-c1-Hhz"/>
+                            <constraint firstItem="cpZ-r7-7Qb" firstAttribute="bottom" secondItem="Qhd-zz-ja0" secondAttribute="bottom" constant="117" id="p8q-45-noz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="z3b-Zy-8Xz">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="mYk-0K-hkk"/>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="fWR-tj-Ldo"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="VV0-1M-BfV" id="mNP-ER-NgQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZf-ga-xkw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
