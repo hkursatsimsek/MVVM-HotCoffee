@@ -116,7 +116,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="z3b-Zy-8Xz">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="mYk-0K-hkk"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="mYk-0K-hkk">
+                            <connections>
+                                <action selector="close" destination="DSy-eR-iVV" id="fzN-Bb-ewx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="fWR-tj-Ldo">
                             <connections>
                                 <action selector="save" destination="DSy-eR-iVV" id="c7i-7E-ZU0"/>
